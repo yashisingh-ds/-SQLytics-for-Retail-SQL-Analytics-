@@ -38,10 +38,12 @@ Key EDA tasks performed with supporting queries:
 SELECT COUNT(*) FROM retail_sales;
 
 **2️⃣ Rename table and columns for consistency **
+
 ALTER TABLE retail_matrix.retail_sales RENAME TO retail_sales;
 ALTER TABLE retail_sales RENAME COLUMN quantiy TO quantity;
 
 **3️⃣ Check for NULL values across key columns**
+
 SELECT *
 FROM retail_sales
 WHERE category IS NULL
@@ -54,6 +56,7 @@ WHERE category IS NULL
   OR total_sale IS NULL;
 
 **4️⃣ . Check for duplicate transaction IDs **
+
 SELECT transaction_id, COUNT(*)
 FROM retail_sales
 GROUP BY transaction_id
@@ -65,6 +68,7 @@ FROM retail_sales
 ORDER BY sale_date ASC;
 
 **6️⃣ Preview the first 5 rows of the cleaned table**
+
 SELECT *
 FROM retail_sales
 LIMIT 5;
