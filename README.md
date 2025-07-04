@@ -20,7 +20,7 @@ In this project, I performed end-to-end data analysis on a simulated retail sale
 - **MySQL Server** (database engine to store and process the data)  
 - **GitHub** (version control and portfolio showcase)
   
-## Data Preparation & Cleaning
+## 🗂️ Data Preparation & Cleaning
 
 - Renamed columns for clarity  
 - Checked for and removed any NULL values  
@@ -28,7 +28,7 @@ In this project, I performed end-to-end data analysis on a simulated retail sale
 - Sorted the dataset by `sale_time` in ascending order  
 - Exported the clean dataset to CSV for reproducibility
 
-##  Exploratory Data Analysis (EDA)
+## 🔎 Exploratory Data Analysis (EDA)
 
 Key EDA tasks performed with supporting queries:
 
@@ -38,13 +38,10 @@ Key EDA tasks performed with supporting queries:
 SELECT COUNT(*) FROM retail_sales;
 
 **2️⃣ Rename table and columns for consistency **
-
-```SQL
 ALTER TABLE retail_matrix.retail_sales RENAME TO retail_sales;
 ALTER TABLE retail_sales RENAME COLUMN quantiy TO quantity;
 
 **3️⃣ Check for NULL values across key columns**
-```SQL
 SELECT *
 FROM retail_sales
 WHERE category IS NULL
@@ -57,7 +54,6 @@ WHERE category IS NULL
   OR total_sale IS NULL;
 
 **4️⃣ . Check for duplicate transaction IDs **
-```SQL
 SELECT transaction_id, COUNT(*)
 FROM retail_sales
 GROUP BY transaction_id
