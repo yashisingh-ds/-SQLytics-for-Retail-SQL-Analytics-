@@ -1,4 +1,4 @@
-# 📊 Retail Sales Analysis using SQL
+# 📊  SQLytics for Retail (SQL + Analytics)
 
 ## 📝 Project Overview
 
