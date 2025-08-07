@@ -2,7 +2,7 @@
 
 ## 📝 Project Overview
 
-In this project, I performed end-to-end data analysis on a simulated retail sales dataset using MySQL. The objective was to clean, explore, and analyze transactional data to extract valuable business insights, supporting data-driven decision-making for a retail strategy. This project applies essential SQL skills needed for real-world data analysis, demonstrating my readiness for data analyst positions.
+This project showcases an end-to-end data analysis workflow on a simulated retail sales dataset using MySQL. The primary goal is to derive actionable business insights from transactional data, such as sales patterns, product trends, and customer segments. Designed to simulate real-world analytics scenarios, the project demonstrates SQL proficiency, analytical thinking, and domain understanding expected from a Data Analyst in the retail or e-commerce sectors.
 
 ## 🎯 Key Objectives
 
@@ -27,6 +27,16 @@ In this project, I performed end-to-end data analysis on a simulated retail sale
 - Verified that `transactions_id` has no duplicates  
 - Sorted the dataset by `sale_time` in ascending order  
 - Exported the clean dataset to CSV for reproducibility
+
+
+ ## 📈 Key Business Insights
+
+- Identified Clothing as the top-selling product category in Nov 2022.
+- Customers aged 20–29 placed the highest number of orders.
+- Female customers preferred clothing and footwear; males leaned toward electronics.
+- Sales spiked in November, showing strong seasonal demand (possibly Black Friday/Cyber Monday).
+- Orders with quantity > 3 hint at bulk buying or promotional sales.
+- Products with high COGS often showed high sales volume — an opportunity to optimize profit margins.
 
 ## 🔎 Exploratory Data Analysis (EDA)
 
@@ -72,8 +82,6 @@ ORDER BY sale_date ASC;
 SELECT *
 FROM retail_sales
 LIMIT 5;
-
-
 
 
 
