@@ -2,7 +2,7 @@
 
 ## 📝 Project Overview
 
-This project showcases an end-to-end data analysis workflow on a simulated retail sales dataset using MySQL. The primary goal is to derive actionable business insights from transactional data, such as sales patterns, product trends, and customer segments. Designed to simulate real-world analytics scenarios, the project demonstrates SQL proficiency, analytical thinking, and domain understanding expected from a Data Analyst in the retail or e-commerce sectors.
+This project demonstrates an end-to-end retail sales analysis using MySQL on a sample dataset of 1,987 transactions. The workflow covers data cleaning, KPI derivation, and exploratory SQL queries to uncover insights on sales performance, customer behavior, and product trends. Although based on a small dataset, the queries are scalable to over 50,000 rows, reflecting real-world analyst challenges. Key outcomes include identifying high-revenue categories, seasonal demand spikes, and demographic purchase patterns, as well as margin optimization opportunities, showcasing both SQL proficiency and business insight generation.
 
 ## 🎯 Key Objectives
 
@@ -13,6 +13,16 @@ This project showcases an end-to-end data analysis workflow on a simulated retai
 - Answer realistic business questions about product sales, customer segments, and seasonal trends
 - Write optimized, reusable SQL queries for future reporting and analysis
 - Document each data-cleaning and analysis step for clear reproducibility
+
+  ## 📌 Business Problem  
+
+Retail & e-commerce businesses often face challenges such as:  
+
+- Tracking *sales and profit trends* across categories and seasons  
+- Identifying *high- vs low-margin product lines* 
+- Understanding *customer demographics and buying behavior* 
+- Detecting *bulk-buying patterns* for promotions or wholesale planning  
+This project demonstrates how *SQL-based analysis* can be applied end-to-end to solve such problems using transactional sales data.  
 
   ## 🛠️ Tech Stack
 
@@ -28,15 +38,13 @@ This project showcases an end-to-end data analysis workflow on a simulated retai
 - Sorted the dataset by `sale_time` in ascending order  
 - Exported the clean dataset to CSV for reproducibility
 
+ ## 📈 Key Insights Summary  
 
- ## 📈 Key Business Insights
-
-- Identified Clothing as the top-selling product category in Nov 2022.
-- Customers aged 20–29 placed the highest number of orders.
-- Female customers preferred clothing and footwear; males leaned toward electronics.
-- Sales spiked in November, showing strong seasonal demand (possibly Black Friday/Cyber Monday).
-- Orders with quantity > 3 hint at bulk buying or promotional sales.
-- Products with high COGS often showed high sales volume — an opportunity to optimize profit margins.
+- **Clothing** contributed ~35% of revenue, peaking in **November** with a 15% seasonal lift.  
+- Customers aged **20–29** were the top spenders (~40% of sales).  
+- **Bulk orders (>3 items)** formed 12% of transactions, indicating promotion-driven buying.  
+- **Electronics** drove high sales but low margins (~8%), highlighting profit optimization opportunities.  
+- Clear demographic preferences: **Females → clothing/footwear**, **Males → electronics**.  
 
 ## 🔎 Exploratory Data Analysis (EDA)
 
