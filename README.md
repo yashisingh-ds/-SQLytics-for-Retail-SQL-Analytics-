@@ -44,7 +44,12 @@ This project demonstrates how *SQL-based analysis* can be applied end-to-end to 
 - Customers aged **20–29** were the top spenders (~40% of sales).  
 - **Bulk orders (>3 items)** formed 12% of transactions, indicating promotion-driven buying.  
 - **Electronics** drove high sales but low margins (~8%), highlighting profit optimization opportunities.  
-- Clear demographic preferences: **Females → clothing/footwear**, **Males → electronics**.  
+- Clear demographic preferences: **Females → clothing/footwear**, **Males → electronics**.
+
+## 📜 SQL Queries & Insights  
+You can view the complete SQL scripts and exploratory queries used in this project here:  
+
+👉 [View SQLytics Queries](https://github.com/yashisingh-ds/-SQLytics-for-Retail-SQL-Analytics-/blob/main/SQLytics%20for%20Retail%20(SQL%20%2B%20Analytics).sql)  
 
 ## 🔎 Exploratory Data Analysis (EDA)
 
